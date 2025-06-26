@@ -2,8 +2,8 @@
 
 A simple and powerful PHP application to fetch **Garena Free Fire** player profile data using **UID** and **server selection**. It includes a user interface for inputs and communicates with a **Worker-based API** in the backend for fast and secure data retrieval.
 
-> Developed by [@nepcodernp](https://github.com/nepcodernp)  
-> 📢 Stay updated: [t.me/nepdevsz](https://t.me/nepdevsz)
+> Developed by [@PROxZAPPY](https://t.me/zappy_mods)  
+> 📢 Stay updated: [t.me/zappymods](https://t.me/zappymods)
 
 ---
 
