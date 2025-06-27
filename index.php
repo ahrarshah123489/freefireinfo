@@ -100,7 +100,7 @@ if (isset($_POST['uid']) && isset($_POST['region'])) {
 
 $servers = [
     'bd' => 'Bangladesh',
-    'ind' => 'India', 
+    'ind' => 'India',
     'pk' => 'Pakistan',
     'sg' => 'Singapore',
     'th' => 'Thailand',
@@ -840,7 +840,7 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
             </h1>
             <p class="text-lg md:text-xl text-gray-800 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed mb-6">
                 🔥 Advanced Free Fire player statistics and information lookup tool
-                <br><span class="text-base text-gray-700 dark:text-gray-400">Powered by NepDevs - Real-time data from all regions</span>
+                <br><span class="text-base text-gray-700 dark:text-gray-400">Powered by PROFESSOR ZAPPY - Real-time data from all regions</span>
             </p>
             
             <!-- Enhanced Stats Pills -->
@@ -881,7 +881,7 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
                             <label for="region" class="block text-gray-900 dark:text-white font-semibold text-lg mb-3">
                                 <i class="fas fa-globe-americas mr-2 text-blue-500"></i>Server Region
                             </label>
-                            <select class="w-full px-4 py-4 bg-white/90 dark:bg-white/10 border-2 border-gray-300 dark:border-white/20 rounded-xl text-gray-900 dark:text-white focus:outline-none focus:ring-4 focus:ring-orange-400/50 focus:border-orange-400 backdrop-blur-sm text-base font-medium transition-all duration-300 hover:border-orange-300" 
+                            <select class="w-full px-4 py-4 bg-white/90 dark:bg-white/10 border-2 border-gray-300 dark:border-white/20 rounded-xl text-gray-900 dark:text-white focus:outline-none focus:ring-4 focus:ring-orange-400/50 focus:border-orange-400 backdrop-blur-sm text-base font-medium transition-all duration-300 hover:border-orange-300"
                                     id="region" name="region" required>
                                 <option value="" class="text-gray-900 bg-white dark:bg-gray-800 dark:text-white">🎯 Choose your server region...</option>
                                 <?php foreach ($servers as $code => $name): ?>
@@ -897,11 +897,11 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
                             <label for="uid" class="block text-gray-900 dark:text-white font-semibold text-lg mb-3">
                                 <i class="fas fa-user-tag mr-2 text-green-500"></i>Player UID
                             </label>
-                            <input type="text" 
-                                   class="w-full px-4 py-4 bg-white/90 dark:bg-white/10 border-2 border-gray-300 dark:border-white/20 rounded-xl text-gray-900 dark:text-white placeholder-gray-600 dark:placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-green-400/50 focus:border-green-400 backdrop-blur-sm text-base font-medium transition-all duration-300 hover:border-green-300" 
-                                   id="uid" name="uid" 
-                                   placeholder="🔢 Enter 9-12 digit UID" 
-                                   value="<?= htmlspecialchars($_POST['uid'] ?? '') ?>" 
+                            <input type="text"
+                                   class="w-full px-4 py-4 bg-white/90 dark:bg-white/10 border-2 border-gray-300 dark:border-white/20 rounded-xl text-gray-900 dark:text-white placeholder-gray-600 dark:placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-green-400/50 focus:border-green-400 backdrop-blur-sm text-base font-medium transition-all duration-300 hover:border-green-300"
+                                   id="uid" name="uid"
+                                   placeholder="🔢 Enter 9-12 digit UID"
+                                   value="<?= htmlspecialchars($_POST['uid'] ?? '') ?>"
                                    pattern="[0-9]{9,12}"
                                    required>
                         </div>
@@ -965,7 +965,7 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
                 <div class="glass-light dark:glass-dark rounded-2xl p-6 md:p-8 card-hover shadow-2xl">
                     <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
                         <div class="flex-shrink-0">
-                            <?php 
+                            <?php
                             $avatarDetail = getSingleItemDetail($playerData['AccountInfo']['AccountAvatarId'], 'Avatar');
                             ?>
                             <div class="relative">
@@ -1045,7 +1045,7 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
                     
                     <!-- BP Badge with Icon -->
                     <div class="glass-light dark:glass-dark rounded-xl p-4 text-center card-hover">
-                        <?php 
+                        <?php
                         $bpBadgeDetail = getSingleItemDetail($playerData['AccountInfo']['AccountBPID'], 'BP Badge');
                         echo displayItemWithIcon($bpBadgeDetail, 'fas fa-medal', 'w-12 h-12 mx-auto mb-2');
                         ?>
@@ -1055,7 +1055,7 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
                     
                     <!-- Banner with Icon -->
                     <div class="glass-light dark:glass-dark rounded-xl p-4 text-center card-hover">
-                        <?php 
+                        <?php
                         $bannerDetail = getSingleItemDetail($playerData['AccountInfo']['AccountBannerId'], 'Banner');
                         echo displayItemWithIcon($bannerDetail, 'fas fa-flag', 'w-12 h-12 mx-auto mb-2');
                         ?>
@@ -1065,7 +1065,7 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
                     
                     <!-- Title with Icon -->
                     <div class="glass-light dark:glass-dark rounded-xl p-4 text-center card-hover">
-                        <?php 
+                        <?php
                         $titleDetail = getSingleItemDetail($playerData['AccountInfo']['Title'], 'Title');
                         echo displayItemWithIcon($titleDetail, 'fas fa-trophy', 'w-12 h-12 mx-auto mb-2');
                         ?>
@@ -1161,9 +1161,9 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
             <div class="mb-8">
                 <h3 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-6 neon-text">🔫 Equipped Weapons</h3>
                 <div class="item-grid">
-                    <?php 
+                    <?php
                     $equippedWeapons = getItemsDetails($playerData['captainBasicInfo']['EquippedWeapon']);
-                    foreach ($equippedWeapons as $index => $weapon): 
+                    foreach ($equippedWeapons as $index => $weapon):
                     ?>
                         <div class="item-card animate-scale-in" style="animation-delay: <?= $index * 0.1 ?>s;">
                             <?= displayItemWithIcon($weapon, 'fas fa-gun', 'w-16 h-16 mx-auto mb-3') ?>
@@ -1180,9 +1180,9 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
             <div class="mb-8">
                 <h3 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-6 neon-text">👕 Equipped Outfit</h3>
                 <div class="item-grid">
-                    <?php 
+                    <?php
                     $equippedOutfit = getItemsDetails($playerData['AccountProfileInfo']['EquippedOutfit']);
-                    foreach ($equippedOutfit as $index => $outfit): 
+                    foreach ($equippedOutfit as $index => $outfit):
                     ?>
                         <div class="item-card animate-scale-in" style="animation-delay: <?= $index * 0.1 ?>s;">
                             <?= displayItemWithIcon($outfit, 'fas fa-tshirt', 'w-16 h-16 mx-auto mb-3') ?>
@@ -1199,9 +1199,9 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
             <div class="mb-8">
                 <h3 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white text-center mb-6 neon-text">⚡ Equipped Skills</h3>
                 <div class="item-grid">
-                    <?php 
+                    <?php
                     $equippedSkills = getItemsDetails($playerData['AccountProfileInfo']['EquippedSkills']);
-                    foreach ($equippedSkills as $index => $skill): 
+                    foreach ($equippedSkills as $index => $skill):
                     ?>
                         <div class="item-card animate-scale-in" style="animation-delay: <?= $index * 0.1 ?>s;">
                             <?= displayItemWithIcon($skill, 'fas fa-magic', 'w-16 h-16 mx-auto mb-3') ?>
@@ -1223,7 +1223,7 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
                         <div class="text-center glass-light dark:glass-dark p-4 rounded-xl card-hover">
-                            <?php 
+                            <?php
                             $petDetail = getSingleItemDetail($playerData['petInfo']['id'], 'Pet');
                             echo displayItemWithIcon($petDetail, 'fas fa-dog', 'w-12 h-12 mx-auto mb-2');
                             ?>
@@ -1246,7 +1246,7 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
                             <div class="text-gray-700 dark:text-gray-400 text-xs">Status</div>
                         </div>
                         <div class="text-center glass-light dark:glass-dark p-4 rounded-xl card-hover">
-                            <?php 
+                            <?php
                             $petSkinDetail = getSingleItemDetail($playerData['petInfo']['skinId'], 'Pet Skin');
                             echo displayItemWithIcon($petSkinDetail, 'fas fa-palette', 'w-12 h-12 mx-auto mb-2');
                             ?>
@@ -1423,7 +1423,7 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
                     <div class="glass-light dark:glass-dark rounded-xl p-4 text-center card-hover">
                         <i class="fab fa-telegram text-3xl text-blue-500 mb-3 animate-pulse-slow"></i>
                         <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Community</h4>
-                        <a href="https://t.me/nepdevsz" target="_blank" class="bg-blue-500/30 text-blue-900 dark:text-blue-200 px-4 py-2 rounded-full text-sm hover:bg-blue-500/50 transition-all font-semibold inline-block w-full hover:scale-105">
+                        <a href="https://t.me/zappymods" target="_blank" class="bg-blue-500/30 text-blue-900 dark:text-blue-200 px-4 py-2 rounded-full text-sm hover:bg-blue-500/50 transition-all font-semibold inline-block w-full hover:scale-105">
                             <i class="fab fa-telegram mr-2"></i>Join
                         </a>
                     </div>
@@ -1443,19 +1443,15 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
         <div class="text-center mt-12 animate-fade-in">
             <div class="glass-light dark:glass-dark rounded-2xl p-6 mb-6 shadow-2xl">
                 <h3 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 neon-text">🔥 Free Fire Player Lookup</h3>
-                <p class="text-gray-700 dark:text-gray-400 text-lg mb-4">Powered by NepDevs - The most comprehensive Free Fire statistics platform</p>
+                <p class="text-gray-700 dark:text-gray-400 text-lg mb-4">Powered by PROFESSOR ZAPPY - The most comprehensive Free Fire statistics platform</p>
                 <div class="flex justify-center space-x-6 mb-4">
-                    <a href="https://t.me/nepdevsz" target="_blank" class="text-blue-500 hover:text-blue-400 transition-colors text-2xl hover:scale-110 transform" title="Telegram">
+                    <a href="https://t.me/zappymods" target="_blank" class="text-blue-500 hover:text-blue-400 transition-colors text-2xl hover:scale-110 transform" title="Telegram">
                         <i class="fab fa-telegram"></i>
                     </a>
-                    <a href="#" class="text-purple-500 hover:text-purple-400 transition-colors text-2xl hover:scale-110 transform" title="Discord">
-                        <i class="fab fa-discord"></i>
                     </a>
-                    <a href="#" class="text-red-500 hover:text-red-400 transition-colors text-2xl hover:scale-110 transform" title="YouTube">
+                    <a href="https://www.youtube.com/@zappy_mods" class="text-red-500 hover:text-red-400 transition-colors text-2xl hover:scale-110 transform" title="YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
-                    <a href="#" class="text-pink-500 hover:text-pink-400 transition-colors text-2xl hover:scale-110 transform" title="Instagram">
-                        <i class="fab fa-instagram"></i>
                     </a>
                 </div>
                 <p class="text-gray-600 dark:text-gray-400 text-sm">© 2024 NepDevs. All rights reserved. | Made with ❤️ for Free Fire Community</p>
@@ -1599,7 +1595,7 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
             const section = document.getElementById('recentSearches');
             
             if (recentSearches.length > 0) {
-                container.innerHTML = recentSearches.map(search => 
+                container.innerHTML = recentSearches.map(search =>
                     `<button onclick="loadRecentSearch('${search.uid}', '${search.region}')" class="bg-gray-500/20 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full text-xs hover:bg-gray-500/30 transition-colors">
                         ${search.uid} (${search.region.toUpperCase()})
                     </button>`
@@ -1979,7 +1975,7 @@ function displayItemWithIcon($item, $defaultIcon = 'fas fa-question', $size = 'w
                 konamiCode.shift();
             }
             
-            if (konamiCode.length === konamiSequence.length && 
+            if (konamiCode.length === konamiSequence.length &&
                 konamiCode.every((code, index) => code === konamiSequence[index])) {
                 showNotification('🎉 Konami Code activated! You found the easter egg!', 'success');
                 document.body.style.animation = 'wiggle 0.5s ease-in-out 3';
